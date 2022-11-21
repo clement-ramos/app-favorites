@@ -1,0 +1,78 @@
+/*General parameter*/
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: rgb(110, 110, 110);
+}
+/*Parameter on header*/
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 40px;
+    margin: 15px;
+}
+header a img{
+    height: 80px;
+}
+header .nav-icons{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 10%;
+}
+.sticky {
+    position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+  }
+/*Parameter on apps*/
+.apps{
+    width: 80%;
+    
+}
+/*Parameter on footer*/
+footer{
+    background-color: #3a3a3a;
+    justify-content: row;
+    color: white;
+}
+.footer-content{
+    padding: 50px 0;
+    margin: auto auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+.socials-media{
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+}
+.socials-media img{
+    width: 30px;
+    margin: 10px;
+}
+.legals-informations{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+}
+.legals-informations p{
+    font-size: 16px;
+}
