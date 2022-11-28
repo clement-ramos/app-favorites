@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');/*Generic parameter*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+h1, h2{
+    font-family: 'Anton', sans-serif;
+}
+body{
+    background-color: #323232;
+    color: #323232;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    color: grey;
+    text-decoration: none;
+}
+h1{
+    text-align: center;
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+p{
+    font-size: 22px;
+}
+/*Header parameter*/
+
+header{
+    z-index: 100;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 60%;
+    padding: 10px;
+    background-color: #323232;
+    border-radius: 40px;
+    margin-top: 20px;
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+nav{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.actual-page{
+    color: white;
+    font-weight: 600;
+}
+header img{
+    height: 70px;
+}
+/*Main parameter*/
+
+main{
+    margin-top: -120px;
+width: 90%;
+}
+.first, .third{
+    padding: 300px 32px;
+}
+.second{
+    padding: 400px 32px;
+}
+
+
+.first{
+    display: flex;
+    justify-content: center;
+
+    background-color: #ffe40e;
+}
+.first img{
+    border-radius: 10px;
+}
+.first section{
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    padding: 20px; 
+}
+
+
+.second{
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-image: url("TV/backgorund.webp");
+    background-size: cover;
+    background-position: center center;
+    margin: -200px 0;
+    
+
+    -webkit-clip-path: polygon(0 200px, 100% 0%, 100% calc(100% - 200px), 0% 100%);
+    clip-path: polygon(0 200px, 100% 0%, 100% calc(100% - 200px), 0% 100%);
+}
+.second h1{
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    padding: 20px; 
+}
+.second section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.second article{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 500px;
+    
+    border-radius: 8px;
+    color: white;
+    background: #323232;
+    padding: 20px; 
+    margin: 40px;
+}
+
+.third{
+    display: flex;
+    justify-content: center;
+
+    background-color: #ffe40e;
+}
+.third section{
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+.third article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    width: 700px;
+    margin-bottom: 40px;
+}
+.third img{
+    width: 80px;
+    margin: 10px;
+}
+.third a{
+    color: #323232;
+    
+}
+.socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #323232;
+    padding: 10px;
+    border-radius: 10px;
+}
+section{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  
+}
+.box{  
+    transform: translateX(400%);
+    transition: transform 0.7s ease;;
+}
+.box.show{
+    transform: translateX(0);
+}
+section img{
+    width: 200px;
+    margin:0 50px;
+    border-radius:  10px;
+    transition: .3s;
+}
+section h2{
+    margin: 10px;
+    font-size: 30px;
+}
+section p{
+    margin: 10px;
+    font-size: 16px;
+}
+/*Footer parameter*/
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    margin-top: -50px;
+    width: 60%;
+
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+}
+footer p{
+    font-size: 16px;
+}
